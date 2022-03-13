@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  db:
+    image: couchdb:3.2.1
+    container_name: ims_db
+    # command: bash -c "cp -i /tmp/local.d/docker.ini /opt/couchdb/etc/local.d/"
+    ports:
+      - "5984:5984"
+    environment:
+      - COUCHDB_USER=ironman
+      - COUCHDB_PASSWORD=123456
+    volumes:
+      - ./data:/opt/couchdb/data
+      # - ./local.d:/etc/local.d
+    

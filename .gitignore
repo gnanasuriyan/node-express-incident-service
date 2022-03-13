@@ -1,0 +1,29 @@
+# Dependency directories
+node_modules/
+
+# TypeScript v1 declaration files
+typings/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Optional npm cache directory
+.npm
+
+# dotenv environment variables file
+.env
+
+# macos
+.DS_Store
+
+# builds
+/project-cli/dist
+dist/
+
+# dbdata
+devops/dev/data
+
+# test coverage
+coverage
